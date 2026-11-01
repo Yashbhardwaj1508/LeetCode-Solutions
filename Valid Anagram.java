@@ -7,11 +7,11 @@ class Solution {
        
        HashMap <Character , Integer> map = new HashMap<>();
 
-    for(char c:s.toCharArray()){
+    for(char c:s.toCharArray()){ // pehli string mai sare character ki frequency
         map.put(c, map.getOrDefault(c,0) +1);
     }
 
-    for(char c:t.toCharArray()){
+    for(char c:t.toCharArray()){ // dusri string check kari ki pehli vali ke charcter hi h ya alag h
         if(!map.containsKey(c) || map.get(c)  == 0){
             return false;
         }
