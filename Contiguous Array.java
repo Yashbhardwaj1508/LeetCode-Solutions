@@ -15,7 +15,7 @@ class Solution {
             if (nums[i] == 0) {
                 sum--;
             } else {
-                sum++;
+                sum++; 
             }
 
             if (map.containsKey(sum)) {
